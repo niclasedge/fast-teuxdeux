@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <!-- Complete Icon - Filled Circle -->
+  <symbol id="icon-complete" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="currentColor"/>
+    <path d="m9 12 2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  
+  <!-- In Progress Icon - Half Circle -->
+  <symbol id="icon-progress" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M12 2 A 10 10 0 0 1 12 22" fill="currentColor"/>
+  </symbol>
+  
+  <!-- Delegated Icon - Circle with Plus -->
+  <symbol id="icon-delegated" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M12 8v8M8 12h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+  
+  <!-- Appointment Icon - Circle with Clock -->
+  <symbol id="icon-appointment" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  </symbol>
+
+  <!-- Notes Icon -->
+  <symbol id="icon-notes" viewBox="0 0 24 24">
+    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" stroke="currentColor" stroke-width="2" fill="none"/>
+    <polyline points="14,2 14,8 20,8" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="16" y1="13" x2="8" y2="13" stroke="currentColor" stroke-width="2"/>
+    <line x1="16" y1="17" x2="8" y2="17" stroke="currentColor" stroke-width="2"/>
+    <polyline points="10,9 9,9 8,9" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+
+  <!-- Delete Icon -->
+  <symbol id="icon-delete" viewBox="0 0 24 24">
+    <polyline points="3,6 5,6 21,6" stroke="currentColor" stroke-width="2" fill="none"/>
+    <path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" stroke="currentColor" stroke-width="2" fill="none"/>
+    <line x1="10" y1="11" x2="10" y2="17" stroke="currentColor" stroke-width="2"/>
+    <line x1="14" y1="11" x2="14" y2="17" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+</svg>
