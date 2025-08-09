@@ -1,0 +1,38 @@
+# Simple Dockerfile using pre-built binaries
+FROM alpine:latest
+
+WORKDIR /app
+
+# Install runtime dependencies
+RUN apk --no-cache add ca-certificates sqlite curl
+
+# Create directories
+RUN mkdir -p /app/static/dist/assets
+RUN mkdir -p /app/data
+RUN mkdir -p /app/logs
+
+# Copy built application (build locally first)
+COPY teuxdeux-clone-linux ./teuxdeux-clone
+
+# Copy built frontend assets
+COPY static/dist ./static/dist
+
+# Create a non-root user
+RUN addgroup -g 1001 -S appgroup && \
+    adduser -S -D -H -u 1001 -h /app -s /sbin/nologin -G appgroup -g appuser appuser
+
+# Change ownership of app directory
+RUN chown -R appuser:appgroup /app
+
+# Switch to non-root user
+USER appuser
+
+# Expose port
+EXPOSE 8080
+
+# Health check
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD curl -f http://localhost:8080/api/v1/health || exit 1
+
+# Run the application
+CMD ["./teuxdeux-clone"]

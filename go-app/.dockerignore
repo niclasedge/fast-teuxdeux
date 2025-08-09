@@ -1,0 +1,43 @@
+# Git
+.git
+.gitignore
+README.md
+
+# Documentation
+*.md
+docs/
+
+# Development files
+.env
+.env.local
+.env.development
+.env.production
+
+# Dependencies
+node_modules/
+
+# Build outputs (will be rebuilt in container, except when using simple dockerfile)
+# teuxdeux-clone
+
+# Logs and databases (will be mounted as volumes)
+logs/
+*.log
+*.db
+data/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Screenshots and test files
+screenshots/
+
+# Temporary files
+tmp/
+temp/
