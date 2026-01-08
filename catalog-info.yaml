@@ -5,6 +5,7 @@ metadata:
   description: Fast TeuxDeux Application
   annotations:
     github.com/project-slug: niclasedge/fast-teuxdeux
+    backstage.io/techdocs-ref: dir:.
   tags:
     - python
     - fastapi

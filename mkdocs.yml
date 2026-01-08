@@ -1,0 +1,9 @@
+site_name: Fast TeuxDeux
+site_description: Fast TeuxDeux Application Documentation
+repo_url: https://github.com/niclasedge/fast-teuxdeux
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core
