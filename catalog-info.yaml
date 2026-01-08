@@ -11,5 +11,5 @@ metadata:
     - fastapi
 spec:
   type: service
-  lifecycle: production
+  lifecycle: offline
   owner: user:niclasedge
