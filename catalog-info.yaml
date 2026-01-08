@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: fast-teuxdeux
+  description: Fast TeuxDeux Application
+  annotations:
+    github.com/project-slug: niclasedge/fast-teuxdeux
+  tags:
+    - python
+    - fastapi
+spec:
+  type: service
+  lifecycle: production
+  owner: user:niclasedge
